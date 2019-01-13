@@ -1,0 +1,10 @@
+{% extends "Salle/layout.html.twig" %}
+
+{% block titre %}
+	Ajout - {{ parent() }}
+{% endblock %}
+
+{% block SalleTp_contenu %}
+	<h2> Ajouter une salle</h2>
+		{%  include "@SalleTp/Salle/formulaire.html.twig" %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "Salle/layout.html.twig" %}
+{% block titre %}
+	Liste - {{ parent() }}
+{% endblock %}
+
+{% block SalleTp_contenu %}
+	{% for salle in listeSalles %}
+		id: {{ salle.id }} batiment: {{ salle.batiment }} etage: {{ salle.etage }} numero {{ salle.numero }} </br>
+	{% endfor %}
+{% endblock %}

@@ -1,0 +1,7 @@
+salle_tp:
+    resource: "@SalleTpBundle/Resources/config/routing.yml"
+    prefix:   /salle
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

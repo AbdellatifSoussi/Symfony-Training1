@@ -1,0 +1,10 @@
+{% extends "Salle/layout.html.twig" %}
+
+{% block titre %}
+	Ordinateur - {{ parent() }}
+{% endblock %}
+
+{% block SalleTp_contenu %}
+	<h1>Ajouter un ordinateur</h1>
+	{{ form(monForm) }}
+{% endblock %}
